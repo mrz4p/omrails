@@ -1,0 +1,40 @@
+$navbar-default-bg: lighten(#000, 10%);
+$body-bg: #0d0d0c;
+$navbar-default-link-color: #bab7b7;
+$navbar-default-link-active-color: #f7f7f7;
+$navbar-default-border: darken($navbar-default-bg, 40%);
+$navbar-default-link-active-bg: darken($navbar-default-bg, 20%);
+$navbar-default-link-hover-bg: darken($navbar-default-bg, 5.5%);
+$navbar-default-link-hover-color: #e0dddd;
+$grid-gutter-width: 20px;
+
+@import 'bootstrap';
+@media (min-width: 768px){
+
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+}  
+
+.footer {
+	margin-top: 1000px;
+	color: $gray;
+	a {
+		color: $gray;
+	}
+}
+
+
+#sidebar  {	
+margin-top: 50px;
+margin-left: 50px;
+}
+.col-md-8{background:#0d0d0c;}
+
+.col-md-2{
+margin-left: 50px;
+}
+
