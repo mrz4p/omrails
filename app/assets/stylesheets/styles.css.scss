@@ -7,7 +7,11 @@ $navbar-default-link-active-bg: darken($navbar-default-bg, 20%);
 $navbar-default-link-hover-bg: darken($navbar-default-bg, 5.5%);
 $navbar-default-link-hover-color: #e0dddd;
 $grid-gutter-width: 20px;
-$headings-color: #eeeee8;
+$headings-color: #5cb85c;
+$link-color: #d6d6d6;
+$link-hover-color: #efeaea;
+$font-size-base: 16px;
+
 
 @import 'bootstrap';
 @media (min-width: 768px){
@@ -17,6 +21,7 @@ $headings-color: #eeeee8;
     display: table;
     table-layout: fixed;
     float:none;
+
 }
 
 .nav {
@@ -27,21 +32,25 @@ background-color: #0000;
 
 }  
 
-.footer {
-	margin-top: 1000px;
+.footer {	
 	color: $gray;
 	a {
 		color: $gray;
 	}
 }
 
+.navbar-default > .active a, .navbar-default > .active a:hover, .navbar-default > li a:hover { background-color: #020d0d;}
+ul
+{
+    list-style-type: none;
+}
+li
+{
+    list-style-type: none;
+}
 .col-md-2{	
-margin-top: -22px;
+margin-top: -23px;
+height: 100%;
+
 }
-
-#col-md-2 .h3{	
-margin-left: 50px;
-}
-
-
 

@@ -1,18 +1,55 @@
-  <div class="col-md-8"><h1>Welcome to MrZaps Page</h1>
-<p>
-	You've found the home page for the
-	<%= link_to "Newsbrowzer", "http://newsbrowzer.com"%>
-	application.
+  <div class="col-md-8">
+    
+<body>
+<div class="container">
+<ul class="thumbnails">
+        <li class="col-md-2">
+          <div class="thumbnail">
+            <img src="shoes1.jpg" alt="product 1">
+            <div class="caption">
+              <p><a href="#" class="btn btn-success">გართობა</a></p>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-2">
+          <div class="thumbnail">
+            <img src="shoes1.jpg" alt="product 1">
+            <div class="caption">
+              <p><a href="#" class="btn btn-success">გართობა</a></p>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-2">
+          <div class="thumbnail">
+            <img src="shoes1.jpg" alt="product 1">
+            <div class="caption">
+              <p><a href="#" class="btn btn-success">გართობა</a></p>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-2">
+          <div class="thumbnail">
+            <img src="shoes1.jpg" alt="product 1">
+            <div class="caption">
+              <p><a href="#" class="btn btn-success">გართობა</a></p>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-2">
+          <div class="thumbnail">
+            <img src="shoes1.jpg" alt="product 1">
+            <div class="caption">
+              <p><a href="#" class="btn btn-success">გართობა</a></p>
+            </div>
+          </div>
+        </li>
 
-</p>
-<p> 
-	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
-	<% if user_signed_in? %>
-	<%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-primary btn-large"  %>
-	<%= link_to "Logout!", destroy_user_session_path, method: :delete, class: "btn btn-primary btn-large"  %>
-	<% else %>
-	<%= link_to "Login!", new_user_session_path, class: "btn btn-primary btn-large" %>
-	<% end %>
-</div>
+      </ul>
 
+  
+
+         </div> <!-- /container -->
+</body>
+</html>
+            
 
