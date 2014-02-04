@@ -4,13 +4,17 @@
 	  <title>One Month Rails</title>
 	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag :all %>
 	  <%= csrf_meta_tags %>
 	</head>
 	<body>
-	<%= render 'layouts/header' %>
-<%= render 'layouts/sidebar' %>
-	<div class="container">
 
+	<%= render 'layouts/header' %>
+	<%= render 'layouts/sidebar' %>
+	<div class="container">
+		<% flash.each do |name, msg| %>
+		<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+		<% end %>
 	<%= yield %>
 	<%= render 'layouts/footer' %>
 </div>

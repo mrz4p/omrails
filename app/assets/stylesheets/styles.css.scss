@@ -7,6 +7,7 @@ $navbar-default-link-active-bg: darken($navbar-default-bg, 20%);
 $navbar-default-link-hover-bg: darken($navbar-default-bg, 5.5%);
 $navbar-default-link-hover-color: #e0dddd;
 $grid-gutter-width: 20px;
+$headings-color: #eeeee8;
 
 @import 'bootstrap';
 @media (min-width: 768px){
@@ -17,6 +18,13 @@ $grid-gutter-width: 20px;
     table-layout: fixed;
     float:none;
 }
+
+.nav {
+background-color: #0000;
+	color: #00000;
+
+}
+
 }  
 
 .footer {
@@ -27,14 +35,13 @@ $grid-gutter-width: 20px;
 	}
 }
 
+.col-md-2{	
+margin-top: -22px;
+}
 
-#sidebar  {	
-margin-top: 50px;
+#col-md-2 .h3{	
 margin-left: 50px;
 }
-.col-md-8{background:#0d0d0c;}
 
-.col-md-2{
-margin-left: 50px;
-}
+
 
